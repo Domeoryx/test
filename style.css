@@ -1,0 +1,138 @@
+body {
+  background-color: white;
+}
+
+#hey {
+  color: #181e5a;
+  font-size: 299px;
+
+  font-family: monospace;
+
+  font-weight: 1000;
+  text-shadow: 2px 2px #f00, 4px 4px blue, 6px 6px greenyellow;
+  background: linear-gradient(45deg, #ade4e4, #ffcccc);
+  margin: auto;
+  width: 75%;
+
+  border: 3px solid red;
+
+  padding: 15px;
+}
+span {
+  display: Inline-block;
+
+  margin: 11px;
+}
+
+.GFG {
+  transform: scale(-1, 1);
+  color: rgb(119, 212, 170);
+
+  -moz-transform: scale(-1, 1);
+
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+#cheapThrills {
+  position: absolute;
+  left: 600px;
+}
+
+#ball {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  position: absolute;
+  top: 47.5px;
+  right: 1100px;
+
+  border-radius: 50%;
+  background: #900c3f;
+  animation-name: bounce;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 47.5px;
+    background-color: #900c3f;
+  }
+  25% {
+    background-color: #c70039;
+  }
+  50% {
+    top: 296.5px;
+    width: 130px;
+    height: 70px;
+    background-color: #ff5733;
+  }
+  75% {
+    background-color: #ffc300;
+  }
+
+  100% {
+    top: 47.5px;
+    background-color: #8d1644;
+  }
+}
+
+.heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 240px;
+  left: 800px;
+  background-color: palevioletred;
+  height: 75px;
+  width: 75px;
+  transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.heart:after {
+  background-color: palevioletred;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 0px;
+  left: 37.5px;
+}
+.heart:before {
+  background-color: palevioletred;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: -37.5px;
+  left: 0px;
+}
+
+@keyframes beat {
+  0% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  5% {
+    transform: rotate(-45deg) scale(0.9);
+  }
+  10% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  15% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
